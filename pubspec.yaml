@@ -1,0 +1,7 @@
+name: web_sandbox
+description: A sample web application
+dependencies:
+  angular:
+    git: https://github.com/angular/angular.dart.git
+  browser: any
+  logging: any
