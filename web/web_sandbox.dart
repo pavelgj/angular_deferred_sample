@@ -1,4 +1,4 @@
-//@Injectables(const[Profiler, RootScope, AstParser])
+@Injectables(const[Profiler, RootScope, AstParser])
 library entry;
 
 import 'dart:async';
