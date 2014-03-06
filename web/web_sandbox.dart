@@ -1,4 +1,4 @@
-@Injectables(const[Profiler, RootScope, AstParser])
+@Injectables(const[Profiler, RootScope, AstParser, NgAnimate])
 library entry;
 
 import 'dart:async';
@@ -37,6 +37,7 @@ void main() {
           'foo': ngRoute(
               path: '/foo',
               view: 'foo.html',
+              defaultRoute: true,
               modules: () => lazyFoo.load().then((_) {
                 return [new foo.FooModule()];
               })),
